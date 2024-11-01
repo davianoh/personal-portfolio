@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import davImg from "../assets/img/dav-japan.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -57,7 +58,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Davian Benito`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Data Scientist", "Data Analyst", "AI Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Data Enthusiast, passionate in working with data and gaining significant insight along the way. Really invested in the developemtn of AI and its implementation across many fields of humanity</p>
+                  <p>Data Enthusiast, passionate in working with data and gaining significant insight along the way. Really invested in the development of AI and its implementation across many fields of humanity</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
@@ -66,7 +67,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={davImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
